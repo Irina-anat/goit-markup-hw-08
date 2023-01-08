@@ -1,0 +1,29 @@
+.title-three {
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    color: var(--second-text-color);
+}

@@ -1,0 +1,94 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+    &__logo {
+        color: #000000;
+    }
+
+    &__link {
+        color: var(--title-text-color);
+        transition: color 250ms var(--timing-function);
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__site-nav {
+        display: flex;
+    }
+
+    &__nav-list {
+        display: flex;
+    }
+
+    &__link.header__contacts {
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+        align-items: center;
+
+        transition: color 250ms var(--timing-function);
+    }
+
+    &__link:hover,
+    .header__link:focus {
+        color: var(--accent-color);
+    }
+
+    &__link--current {
+        color: var(--accent-color);
+        transition: color 250ms var(--timing-function);
+        position: relative;
+        /*позиціонуємо підкреслення відносно посилання*/
+    }
+
+    &__link--current::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        width: 100%;
+        /*width: 0%;    для transition width*/
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
+
+    &__nav-list .header__link {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+
+    &__item .header__link {
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    &__nav-list .header__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__contacts-list {
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__contacts-list .header__item+.header__item {
+        margin-left: 50px;
+    }
+
+    /*&__contacts-list .header__item {
+                    display: flex;
+    }*/
+}
