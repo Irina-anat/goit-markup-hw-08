@@ -1,5 +1,5 @@
 /*особливості*/
-.specials {
+/*.specials {
     padding-top: 94px;
     padding-bottom: 94px;
     &__list {
@@ -10,21 +10,30 @@
         &__item {
             flex-basis: calc((100% - 60px)/4);
         }
-    
-        &__box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 120px;
-            margin-bottom: 30px;
-            border-radius: 4px;
-            background: var(--primary-bg-color);
-        }
-    
-        &__text {
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-        }
+               
+}*/
+
+.specials {
+    padding-bottom: 60px;
+}
+
+.specials__item{
+    padding-bottom: 30px;
+}
+
+.specials__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: var(--primary-bg-color);
+}
+
+.specials__text {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 }
 

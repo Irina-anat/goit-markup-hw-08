@@ -1,68 +1,119 @@
-.header {
+    .header {
+    position: relative;
     border-bottom: 1px solid #ECECEC;
-
-    &__logo {
-        color: #000000;
+ 
     }
 
-    &__link {
-        color: var(--title-text-color);
-        transition: color 250ms var(--timing-function);
+    .header__nav-list,
+    .header__contacts-list {
+       @media (max-width: 767px) {
+                        display: none;
+        }
     }
 
-    &__container {
-        display: flex;
-        align-items: center;
+    .header__site-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     }
 
-    &__site-nav {
-        display: flex;
+    /*мобільне меню*/
+
+    .menu-button {
+        display: inline-flex;
+        margin-left: auto;
+        padding: 0;
+        border: none;
+        background-color: transparent;
     }
-
-    &__nav-list {
-        display: flex;
+    /*ховаємо іконку якщо не відкрито*/
+    .menu-button .menu__icon-close{
+        display: none;
     }
-
-    &__link.header__contacts {
-        color: var(--primary-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        display: flex;
-        align-items: center;
-
-        transition: color 250ms var(--timing-function);
+    /*якщо відкрито - видно іконку закриття*/
+    .menu-button.is-open .menu__icon-close{
+    display: block;
     }
-
-    &__link:hover,
-    .header__link:focus {
-        color: var(--accent-color);
+    /*якщо відкрито - ховаємо іконку меню*/
+    .menu-button.is-open .menu__icon-menu{
+        display: none;
     }
-
-    &__link--current {
-        color: var(--accent-color);
-        transition: color 250ms var(--timing-function);
-        position: relative;
-        /*позиціонуємо підкреслення відносно посилання*/
-    }
-
-    &__link--current::after {
-        content: "";
-
+    
+    /*контейнер меню*/
+    .menu-container{
+        display: none;
         position: absolute;
+        top: 100%;
         left: 0;
-        bottom: 0;
-
-        display: block;
         width: 100%;
-        /*width: 0%;    для transition width*/
-        height: 4px;
+        height: 796px;
+       background-color: aqua;
+
+       &.is-open {
+        display: block;
+       }
+    }
+
+  
+
+/*.header__link {
+    color: var(--title-text-color);
+    transition: color 250ms var(--timing-function);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__site-nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__link.header__contacts {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+
+    transition: color 250ms var(--timing-function);
+}
+
+.header__link:hover,
+.header__link:focus {
+    color: var(--accent-color);
+}
+
+.header__link--current {
+    color: var(--accent-color);
+    transition: color 250ms var(--timing-function);
+    position: relative;
+    /*позиціонуємо підкреслення відносно посилання*//*
+}
+
+.header__link--current::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    /*width: 0%;    для transition width*/
+    /* height: 4px;
         background-color: var(--accent-color);
         border-radius: 2px;
-    }
+      }
 
-    &__nav-list .header__link {
+        .header__nav-list .header__link {
         display: block;
         font-weight: 500;
         font-size: 14px;
@@ -70,25 +121,22 @@
         letter-spacing: 0.02em;
     }
 
-    &__item .header__link {
+        .header__item .header__link {
         padding-bottom: 32px;
         padding-top: 32px;
     }
 
-    &__nav-list .header__item:not(:last-child) {
+        .header__nav-list .header__item:not(:last-child) {
         margin-right: 50px;
     }
 
-    &__contacts-list {
+        .header__contacts-list {
         display: flex;
         margin-left: auto;
     }
 
-    &__contacts-list .header__item+.header__item {
+        .header__contacts-list .header__item+.header__item {
         margin-left: 50px;
-    }
-
-    /*&__contacts-list .header__item {
-                    display: flex;
     }*/
-}
+
+    

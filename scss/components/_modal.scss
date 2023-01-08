@@ -1,8 +1,9 @@
 /*модальне вікно героя*/
-
+/*
 .backdrop {
     position: fixed;
     /*z-index: 1;*/
+    /*
     top: 0;
     left: 0;
     width: 100%;
@@ -16,22 +17,22 @@
         &.is-hidden {
                 opacity: 0;
                 /*не помітний бекдроп - прозорий*/
-                visibility: hidden;
+                /*visibility: hidden;
                 /*бекдроп приховується не лише візуально, а й від браузера
-        pointer-events: none;/*не клікабельна кнопка бекдроп*/
+        pointer-events: none;/*не клікабельна кнопка бекдроп*//*
             }
 }
 
 /*можливо центрувати modal display:flex; align-items: center; justufy-content: center;}*/
 
 
-
+/*
 .modal {
     /*position: relative;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);/*центрую модальне вікно без контейнера*/
-    display: flex;
+   /* display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -59,7 +60,7 @@ transform: translate(-50%, -50%);/*центрую модальне вікно б
 .modal__container {
     position: relative;
     /*щоб спозиціонівати кнопку закриття*/
-    padding: 40px 39px 40px 41px;
+   /* padding: 40px 39px 40px 41px;
 
     max-height: 581px;
     height: 100%;
@@ -69,6 +70,6 @@ transform: translate(-50%, -50%);/*центрую модальне вікно б
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     overflow-y: auto;
-    /*щоб з`явилась полоса прокрутки*/
-}
+    /*щоб з`явилась полоса прокрутки*//*
+}*/
 
