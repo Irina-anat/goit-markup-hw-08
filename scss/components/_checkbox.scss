@@ -1,4 +1,4 @@
-/*.checkbox {
+.checkbox {
     position: relative;
     display: flex;
     align-items: center;
@@ -10,13 +10,13 @@
     
         &__input {
             appearance: none;
-            /*знімає всі дефолтні стилі від браузера*//*
+            /*знімає всі дефолтні стилі від браузера*/
         }
     
         &__label {
             position: relative;
             padding-left: 25px;
-            /*щоб була клікабельна іконка*//*
+            /*щоб була клікабельна іконка*/
             font-size: 14px;
             line-height: 1.714;
             letter-spacing: 0.03em;
@@ -36,7 +36,7 @@
             border: 2px solid var(--title-text-color);
             border-radius: 2px;
             fill: transparent;
-            /*невидимий колір check*//*
+            /*невидимий колір check*/
             transition: fill 250ms var(--timing-function),
             background-color 250ms var(--timing-function);
         }
@@ -50,5 +50,5 @@
         }
    
 }
-*/
+
 

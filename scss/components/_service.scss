@@ -1,11 +1,11 @@
 /*послуги*/
 
+
 .service {
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
         display: none;
     }
-}
-/*.service {
+
     display: flex;
     padding-bottom: 94px;
 
@@ -17,12 +17,12 @@
         &__card {
             flex-basis: calc((100% - 60px) / 3);
         }
-}*/
+}
 
 
 /*текст над картинками послуг*/
 
-/*.label__thumb {
+.label__thumb {
     position: relative;
 }
 
@@ -30,7 +30,7 @@
     position: absolute;
     bottom: 0;
     /*позиціонуємо вниз*/
-    /*
+    
     width: 100%;
     padding: 27px;
 
@@ -44,7 +44,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 
 }
-*/
+
 
 
 

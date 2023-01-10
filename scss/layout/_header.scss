@@ -1,14 +1,6 @@
     .header {
     position: relative;
     border-bottom: 1px solid #ECECEC;
- 
-    }
-
-    .header__nav-list,
-    .header__contacts-list {
-       @media (max-width: 1600px) {
-                        display: none;
-        }
     }
 
     .header__site-nav{
@@ -16,6 +8,8 @@
     align-items: center;
     /*justify-content: space-between;*/
     }
+
+       
 
     /*мобільне меню*/
 
@@ -53,7 +47,7 @@
         display: none;
         position: absolute;
         padding-top: 48px;
-            padding-right: 40px;
+            padding-left: 40px;
             top: 100%;
             left: 0;
             width: 100%;
@@ -64,17 +58,18 @@
                 }
        }
       @media screen and (min-width: 768px) {
-        display: flex;
-        flex-grow: 1; /*щоб розтягувався*/
+        display: none;
+        /*flex-grow: 1; /*щоб розтягувався*/
       }
 
     }
 
-    .navigation{
+    .menu__navigation{
         margin-bottom: 306px;
     }
 
-    .navigation__link {
+    .menu__navigation-link {
+        display: block;
         margin-bottom: 32px;
         font-weight: 500;
         font-size: 40px;
@@ -86,108 +81,127 @@
     }
 
 
-    .contacts__link{
+    .menu__contacts-link{
             font-weight: 500;
-                font-size: 24px;
-                line-height: 1.1667;
-                letter-spacing: 0.02em;
+            font-size: 24px;
+            line-height: 1.1667;
+            letter-spacing: 0.02em;
             
-                color: var(--primary-text-color);
-                transition: font-size 250ms var(--timing-function),
-                line-height 250ms var(--timing-function),
-                color 250ms var(--timing-function);
+            color: var(--primary-text-color);
+            transition: font-size 250ms var(--timing-function),
+            line-height 250ms var(--timing-function),
+            color 250ms var(--timing-function);
     }
 
-    .navigation__link:hover,.contacts__link:hover,
-    .navigation__link:focus,.contacts__link:focus{
+    .menu__navigation-link:hover,.menu__contacts-link:hover,
+    .menu__navigation-link:focus,.menu__contacts-link:focus{
     font-size: 34px;
     line-height: 1.176;
     color: var(--accent-color);
    }
 
-  
+  /*стилі хедер*/
 
-/*.header__link {
-    color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
-}
+  .header {
+      border-bottom: 1px solid #ECECEC;
 
-.header__container {
-    display: flex;
-    align-items: center;
-}
-
-.header__site-nav {
-    display: flex;
-}
-
-.header__nav-list {
-    display: flex;
-}
-
-.header__link.header__contacts {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-
-    transition: color 250ms var(--timing-function);
-}
-
-.header__link:hover,
-.header__link:focus {
-    color: var(--accent-color);
-}
-
-.header__link--current {
-    color: var(--accent-color);
-    transition: color 250ms var(--timing-function);
-    position: relative;
-    /*позиціонуємо підкреслення відносно посилання*//*
-}
-
-.header__link--current::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    display: block;
-    width: 100%;
-    /*width: 0%;    для transition width*/
-    /* height: 4px;
-        background-color: var(--accent-color);
-        border-radius: 2px;
+      &__logo {
+          color: #000000;
       }
 
-        .header__nav-list .header__link {
-        display: block;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+      &__link {
+          color: var(--title-text-color);
+          transition: color 250ms var(--timing-function);
+      }
+
+      &__container {
+          display: flex;
+          align-items: center;
+      }
+
+      &__site-nav {
+          display: flex;
+      }
+
+      &__nav-list {
+          display: flex;
+      }
+
+      &__link.header__contacts {
+          color: var(--primary-text-color);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
+          display: flex;
+          align-items: center;
+
+          transition: color 250ms var(--timing-function);
+      }
+
+      &__link:hover,
+      .header__link:focus {
+          color: var(--accent-color);
+      }
+
+      &__link--current {
+          color: var(--accent-color);
+          transition: color 250ms var(--timing-function);
+          position: relative;
+          /*позиціонуємо підкреслення відносно посилання*/
+      }
+
+      &__link--current::after {
+          content: "";
+
+          position: absolute;
+          left: 0;
+          bottom: 0;
+
+          display: block;
+          width: 100%;
+          /*width: 0%;    для transition width*/
+          height: 4px;
+          background-color: var(--accent-color);
+          border-radius: 2px;
+      }
+
+      &__nav-list .header__link {
+          display: block;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
+      }
+
+      &__item .header__link {
+          padding-bottom: 32px;
+          padding-top: 32px;
+      }
+
+      &__nav-list .header__item:not(:last-child) {
+          margin-right: 50px;
+      }
+
+      &__contacts-list {
+          display: flex;
+          margin-left: auto;
+      }
+
+      &__contacts-list .header__item+.header__item {
+          margin-left: 50px;
+      }
     }
 
-        .header__item .header__link {
-        padding-bottom: 32px;
-        padding-top: 32px;
-    }
 
-        .header__nav-list .header__item:not(:last-child) {
-        margin-right: 50px;
-    }
 
-        .header__contacts-list {
-        display: flex;
-        margin-left: auto;
-    }
 
-        .header__contacts-list .header__item+.header__item {
-        margin-left: 50px;
-    }*/
+
+         .header__nav-list,
+         .header__contacts-list {
+             @media screen and (max-width: 767px) {
+                 display: none;
+             }
+         }
 
     
