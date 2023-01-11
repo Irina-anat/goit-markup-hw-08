@@ -28,22 +28,23 @@
             color: var(--accent-color);
         }
 
-    @media screen and (min-width: 480px) {
-                     width: 210px;
-    }
-
-    @media screen and (min-width: 768px) {
-              width: 226px;
-    }
-
-    @media screen and (min-width: 1200px) {
-             width: 170px;
-    }
 
 }
 
 .clients__icon {
     fill: currentColor;
+}
+
+.сlients__card{
+flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 150px) / 6);
+    }
 }
 
 

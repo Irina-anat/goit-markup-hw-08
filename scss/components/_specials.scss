@@ -17,8 +17,12 @@
     padding-bottom: 60px;
 }
 
-.specials__item{
+.specials__item {
     padding-bottom: 30px;
+}
+
+.specials__item:last-child{
+    padding-bottom: 0;
 }
 
 .specials__box {

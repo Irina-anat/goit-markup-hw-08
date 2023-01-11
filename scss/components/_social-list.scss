@@ -1,7 +1,9 @@
 .social-list {
     display: flex;
-    margin-left: 122px;
-    margin-right: 122px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+    max-width: 100%;
     gap: 10px;
 }
 

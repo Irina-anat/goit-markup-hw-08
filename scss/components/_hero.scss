@@ -6,26 +6,26 @@
     text-align: center;
     padding: 118px 60px;
     margin-bottom: 60px;
-    /*width: 100%;
+    width: 480px;
+    max-width: 100%;
+    min-height: 400px;
     /*картинка героя*/
-    /*max-width: 1600px;
-    min-height: 400px;*/
+    
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media screen and (min-width: 480px) {
-            width: 480px;
-        }
     
         @media screen and (min-width: 768px) {
             width: 768px;
         }
     
         @media screen and (min-width: 1600px) {
-            width: 1600px;
+            width: 1600px;   
+            min-height: 600px;
+            padding: 200px 452px;
         }
       
 }
@@ -37,6 +37,11 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    
+        @media screen and (min-width: 1600px) {
+        font-size: 44px;
+        line-height: 1.364;
+        }
 }
 
 
