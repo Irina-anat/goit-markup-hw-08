@@ -1,17 +1,17 @@
 /*Підписка на розсилку*/
 
-.subscription {
+/*.subscription {
    /* margin-left: auto;*/
     /*min-width: 570px;*/
-    min-width: 450px;
-}
+    /*min-width: 450px;*//*
+}*/
 
-.subscription__form {
+/*.subscription__form {
     /*display: flex;
     justify-content: center;
     align-items: center;*/
-    width: 100%;
-}
+    /*width: 100%;*//*
+}*/
 
 .subscription__input {
     padding-top: 15px;
@@ -21,27 +21,16 @@
     /*margin-right: 12px;*/
     height: 50px;
     width: 100%;
-
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    outline: none;
-    transition: border-color 250ms var(--timing-function);
-
-    &::placeholder {
-            font-family: inherit;
-            font-size: 16px;
-            line-height: 1.25px;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-        }
-    
-        &:focus {
-            color: rgba(255, 255, 255, 0.6);
-        }
-   
+    outline: none;   
 }
 
 .subscription__btn {

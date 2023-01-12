@@ -766,19 +766,17 @@ img {
 }
 
 /*Підписка на розсилку*/
-.subscription {
-  /* margin-left: auto;*/
-  /*min-width: 570px;*/
-  min-width: 450px;
-}
-
-.subscription__form {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
-  width: 100%;
-}
-
+/*.subscription {
+   /* margin-left: auto;*/
+/*min-width: 570px;*/
+/*min-width: 450px;*/ /*
+}*/
+/*.subscription__form {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+/*width: 100%;*/ /*
+}*/
 .subscription__input {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -787,52 +785,16 @@ img {
   /*margin-right: 12px;*/
   height: 50px;
   width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-  -webkit-transition: border-color 250ms var(--timing-function);
-  transition: border-color 250ms var(--timing-function);
-}
-.subscription__input::-webkit-input-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription__input::-moz-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription__input:-ms-input-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription__input::-ms-input-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription__input::placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription__input:focus {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__btn {
@@ -1102,6 +1064,8 @@ img {
 
 .header {
   border-bottom: 1px solid #ECECEC;
+  padding-top: 15px;
+  padding-bottom: 15px; /*для мобільного*/
 }
 .header__logo {
   color: #000000;
@@ -1120,6 +1084,7 @@ img {
           align-items: center;
 }
 .header__menu {
+  height: 40px;
   padding: 0;
   border: none;
   background-color: transparent;
