@@ -124,7 +124,31 @@
         <h2 class="section-title">Наша команда</h2>
                 <ul class="komand__list">
                     <li class="komand__card">
-                        <img  src="./images/foto1.jpg" alt="фото продакт дизайнера" width="270" height="260" >
+                        <!--mobile-->
+                        <img 
+                srcset="
+                ./images/foto1450.jpg 450w,
+                ./images/foto1450@2x.jpg 900w,
+                  "
+                media="screen and (max-width:767px)"
+                sizes="100vw"
+                src="./images/foto1450.jpg" alt="фото продакт дизайнера"  
+                  
+                srcset="
+                ./images/foto1354.jpg 354w,
+                ./images/foto1354@2x.jpg 708w,
+                "
+                media="screen and (max-width:1199px)"
+                sizes="(min-width: 768px) 50vw, 100vw"
+                src="./images/foto1354.jpg" alt="фото продакт дизайнера" 
+
+                srcset="
+                    ./images/foto1270.jpg 270w,
+                    ./images/foto1270@2x.jpg 540w,
+                  "
+                media="screen and (min-width:1200px)"
+                sizes="(min-width: 1200px) 25vw, 100vw"
+                src="./images/foto1270.jpg" alt="фото продакт дизайнера" >
                         <div class="komand__information">
                         <h3 class="komand__title">Ігор Дем'яненко</h3>
                         <p class="komand__text" lang="en">Product Designer</p>
