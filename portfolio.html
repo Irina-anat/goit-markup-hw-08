@@ -17,22 +17,29 @@
         <div class="container">
             <div class="header__container">
                 <nav class="header__site-nav">
-                    <a href="./index.html" class="logo header__item">Web<span class="header__logo">Studio</span></a>
+                    <!--логотип в хедер-->
+                    <a href="./index.html" class="logo header__item">Web<span class="logo__black">Studio</span></a>
                     <ul class="header__nav-list">
                         <li class="header__item"><a class="header__link " href="./index.html">Студія</a></li>
                         <li class="header__item"><a class="header__link header__link--current" href="#">Портфоліо</a></li>
                         <li class="header__item"><a class="header__link" href="#">Контакти</a></li>
                     </ul>
+                    <button type="button" class="header__menu js-open-menu">
+                        <svg width="40" height="40">
+                            <use href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+    
                 </nav>
                 <ul class="header__contacts-list">
                     <li class="header__item">
-                        <a class="header__link header__contacts" href="mailto:info@devstudio.com">
+                        <a class=" header__contacts" href="mailto:info@devstudio.com">
                             <svg class="contacts-icon mail" width="16" height="12">
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link header__contacts" href="tel:+380961111111">
+                        <a class="header__contacts" href="tel:+380961111111">
                             <svg class="contacts-icon tel" width="10" height="16">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>+38 096 111 11 11</a>
@@ -192,7 +199,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="social-footer">
+            <div class="footer-social">
                 <h3 class="footer__title">приєднуйтесь</h3>
                 <ul class="social-list footer-list">
                     <li class="social-card">

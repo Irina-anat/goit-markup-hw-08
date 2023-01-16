@@ -2,6 +2,9 @@
        border-bottom: 1px solid #ECECEC;
        padding-top: 15px;
        padding-bottom: 15px; /*для мобільного*/
+        @media screen and (min-width: 768px) {
+            padding:0;
+            }
 
        &__logo {
            color: #000000;
@@ -26,8 +29,7 @@
         
             @media screen and (min-width: 768px) {
             display: none;
-            
-                }
+            }
             }
 
        &__site-nav {
@@ -44,7 +46,7 @@
        }
 
        &__link.header__contacts {
-           color: var(--primary-text-color);
+           
            font-weight: 500;
            font-size: 14px;
            line-height: 1.14;
@@ -55,6 +57,16 @@
            transition: color 250ms var(--timing-function);
        }
 
+       &__contacts{
+       color: var(--primary-text-color);
+        @media screen and (max-width: 1199px) {
+                font-size: 12px;
+                line-height: 1.167;
+            }
+       }
+
+
+       &__contacts:hover,
        &__link:hover,
        .header__link:focus {
            color: var(--accent-color);
@@ -90,6 +102,8 @@
            letter-spacing: 0.02em;
        }
 
+       
+
        &__item .header__link {
            padding-bottom: 32px;
            padding-top: 32px;
@@ -102,10 +116,16 @@
        &__contacts-list {
            display: flex;
            margin-left: auto;
+           flex-direction: column;/*до 1199*/
+        @media screen and (min-width: 1200px) {
+          flex-direction: row;
+            }
        }
 
        &__contacts-list .header__item+.header__item {
-           margin-left: 50px;
+        @media screen and (min-width: 1200px) {
+                margin-left: 50px;
+            }
        }
 
     }
