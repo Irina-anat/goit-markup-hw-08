@@ -317,6 +317,11 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 767px) {
+  .title-three {
+    text-align: center;
+  }
+}
 
 .section-title {
   color: var(--title-text-color);
