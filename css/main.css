@@ -55,7 +55,7 @@ img {
   background-color: #2F303A;
   text-align: center;
   padding: 118px 60px;
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
   width: 480px;
   max-width: 100%;
   min-height: 400px;
@@ -239,9 +239,6 @@ img {
   top: 10px;
   right: 15px;
 }
-.menu__navigation {
-  margin-bottom: 306px;
-}
 .menu__navigation-link {
   display: inline-block;
   margin-bottom: 32px;
@@ -313,6 +310,13 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1199px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.1667;
+    margin-bottom: 50px;
+  }
+}
 
 .footer__title {
   font-weight: 700;
@@ -340,6 +344,13 @@ img {
 }*/
 .specials {
   padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1199px) {
+  .specials {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -366,6 +377,7 @@ img {
   .specials__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -455,8 +467,13 @@ img {
 .komand {
   padding-bottom: 60px;
   padding-top: 60px;
-  margin-bottom: 60px;
   background-color: var(--primary-bg-color);
+}
+@media screen and (min-width: 1199px) {
+  .komand {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .komand__card {
@@ -465,7 +482,6 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .komand__card {
@@ -520,7 +536,14 @@ img {
 
 /*Постійні клієнти*/
 .сlients {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1199px) {
+  .сlients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients__list {
@@ -693,7 +716,7 @@ img {
   padding: 40px 39px 40px 41px;
   max-height: 581px;
   height: 100%;
-  max-width: 528px;
+  max-width: 450px;
   width: 100%;
   background-color: var(--second-text-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -701,6 +724,11 @@ img {
   border-radius: 4px;
   overflow-y: auto;
   /*щоб з`явилась полоса прокрутки*/
+}
+@media screen and (min-width: 1199px) {
+  .modal__container {
+    max-width: 528px;
+  }
 }
 
 /*Форма*/
@@ -1192,7 +1220,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-.header__link.header__contacts {
+.header__link, .header__contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -1327,6 +1355,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__box {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 .footer__box .logo {

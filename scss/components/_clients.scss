@@ -1,7 +1,14 @@
 /*Постійні клієнти*/
 
 .сlients{
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+       
+    
+    @media screen and (min-width: 1199px) {
+            padding-bottom: 94px;
+            padding-top: 94px;
+    }
 }
 
 .clients__list {
@@ -27,7 +34,6 @@
             border: 1px solid var(--accent-color);
             color: var(--accent-color);
         }
-
 
 }
 

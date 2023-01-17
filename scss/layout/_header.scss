@@ -45,7 +45,7 @@
            display: flex;
        }
 
-       &__link.header__contacts {
+       &__link, &__contacts {
            
            font-weight: 500;
            font-size: 14px;
@@ -60,8 +60,8 @@
        &__contacts{
        color: var(--primary-text-color);
         @media screen and (max-width: 1199px) {
-                font-size: 12px;
-                line-height: 1.167;
+        font-size: 12px;
+            line-height: 1.167;
             }
        }
 
