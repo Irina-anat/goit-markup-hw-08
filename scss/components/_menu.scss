@@ -22,6 +22,7 @@
      right: 15px;
  }
 
+
 &__navigation-link {
     display: inline-block;
     margin-bottom: 32px;
@@ -33,11 +34,16 @@
     color: var(--title-text-color);
     transition: color 250ms var(--timing-function);
 
+   
     &:hover,
     &:focus {
             color: var(--accent-color);
-        }
+        }           
     }
+
+    &__navigation-link--current {
+             color: var(--accent-color);
+   }
 
     &__tel-link {
        display: block;
@@ -84,6 +90,13 @@
                &__social-link--right{
                     border-right: none;
                 }
+}
+
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 
