@@ -746,6 +746,7 @@ img {
   border-radius: 4px;
   overflow-y: auto;
   /*щоб з`явилась полоса прокрутки*/
+  margin: auto;
 }
 @media screen and (min-width: 1199px) {
   .modal__container {
