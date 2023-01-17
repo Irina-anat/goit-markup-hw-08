@@ -117,6 +117,10 @@
            display: flex;
            margin-left: auto;
            flex-direction: column;/*до 1199*/
+        @media screen and (max-width: 1199px){
+            gap: 10px;
+        }
+        
         @media screen and (min-width: 1200px) {
           flex-direction: row;
             }
@@ -124,7 +128,7 @@
 
        &__contacts-list .header__item+.header__item {
         @media screen and (min-width: 1200px) {
-                margin-left: 50px;
+                margin-left: 40px;
             }
        }
 
