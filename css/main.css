@@ -1104,8 +1104,7 @@ img {
   }*/
 }
 .project img {
-  width: 100%; /*тимчасово*/
-  height: 294px; /*тимчасово*/
+  height: 294px;
 }
 .project__overlay-thumb {
   position: relative;
