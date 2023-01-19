@@ -1143,6 +1143,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+@media screen and (max-width: 390px) {
+  .project__text-overlay {
+    font-size: 16px;
+  }
+}
 .project__element:hover .project__overlay-informatoin {
   -webkit-transform: translateY(0);
           transform: translateY(0);
