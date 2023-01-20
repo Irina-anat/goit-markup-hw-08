@@ -1,0 +1,16 @@
+/*колір основного тексту : #757575;*/
+/*колір додаткового тексту : #212121;*/
+/*колір акценту : #2196F3;*/
+/*колір лого шапка : #000000;*/
+/*колір білого тексту : #FFFFFF);*/
+/*додатковий колір фону : #F5F4FA;*/
+/*колір баннера : #2F303A; */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #F5F4FA;
+    --icons-primary-color: #AFB1B8;
+    --second-text-color: #FFFFFF;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

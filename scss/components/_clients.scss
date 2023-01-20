@@ -1,0 +1,57 @@
+/*Постійні клієнти*/
+
+.сlients{
+    padding-bottom: 60px;
+    padding-top: 60px;
+       
+    
+    @media screen and (min-width: 1199px) {
+            padding-bottom: 94px;
+            padding-top: 94px;
+    }
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;/*щоб було в колонки - перенос*/
+    gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    height: 92px;
+    border: 1px solid var(--icons-primary-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons-primary-color);
+
+    transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+
+    &:hover,
+        &:focus {
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+}
+
+.clients__icon {
+    fill: currentColor;
+}
+
+.сlients__card{
+flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 150px) / 6);
+    }
+}
+
+
+
