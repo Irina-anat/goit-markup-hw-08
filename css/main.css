@@ -1386,7 +1386,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .header__nav-list,
-.header__contacts-list {
+  .header__contacts-list {
     display: none;
   }
 }
